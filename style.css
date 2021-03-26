@@ -1,0 +1,190 @@
+/* ----------------------------------------------------------------Entire Body Defaults------------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgba(160, 180, 210, 0.089);
+}
+.mother-container,
+.first-part {
+  display: flex;
+}
+/* -----------------------------------------------------------left side nav links styles------------------------------------------------------------------------------ */
+.nav-container {
+  width: 20vw;
+  height: 100vh;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+.ficons {
+  display: none;
+}
+nav ul li a {
+  width: 100%;
+  color: black;
+}
+.nav-container ul li a:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+.nav-container ul li {
+  padding: 1.5rem;
+}
+h2 {
+  font-size: 3rem;
+  padding: 1.5rem;
+  padding-top: 0;
+  padding-left: 0;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+#mybut {
+  padding: 1rem;
+  width: 7vw;
+  margin-left: 20%;
+  margin-top: 5%;
+  background-color: tomato;
+  border-radius: 1.3rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+/* -----------------------------------------------------------------------main middle part styles---------------------------------------------------------------------- */
+.first-part {
+  margin-top: 8%;
+}
+h1 {
+  width: 50vw;
+  font-size: 5rem;
+}
+.left {
+  width: 20vw;
+  margin-right: 2rem;
+  line-height: 1.5rem;
+}
+.left #onlyp {
+  padding: 1rem;
+}
+/* -------------------------------------------------------------------------Pictures Part------------------------------------------------------------------------------ */
+.photos {
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 3px 20px 15px rgba(0, 0, 0, 0.315);
+}
+.single-photo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.description {
+  padding: 1rem;
+}
+.image-container {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  cursor: pointer;
+}
+.line {
+  width: 20%;
+  height: 0.2rem;
+  background-color: red;
+  margin-left: 2rem;
+}
+/* ----------------------------------------------------------------------A Bunch of media Quires to make website Responsive------------------------------------------- */
+/* ----------------------first and small break point------------------------------------------- */
+@media (max-width: 1200px) {
+  .image-container {
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 4em;
+  }
+}
+/* ----------------------Final and a BIG Total makeover break point---------------------------------- */
+@media (max-width: 632px) {
+  .nav-links,
+  #mybut {
+    display: none;
+  }
+  .nav-links a {
+    display: block;
+    padding: 15px;
+    color: green;
+    background-color: rgba(216, 191, 216, 0.938);
+  }
+  .nav-container {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.8rem;
+  }
+  .nav-links.active {
+    position: absolute;
+    left: 0px;
+    top: 70px;
+  }
+  .ficons {
+    display: block;
+  }
+  h2 {
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 1.8rem;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .mother-container {
+    flex-direction: column;
+  }
+  h1 {
+    margin-left: 40px;
+    width: 70vw;
+    font-size: 1.8em;
+    text-align: left;
+  }
+  .image-container {
+    margin-top: 0.8rem;
+  }
+  .single-photo {
+    width: 7rem;
+    height: 7rem;
+  }
+  .description {
+    padding: 0.3rem;
+  }
+  .left {
+    display: none;
+  }
+  #super {
+    width: 100vw;
+    display: block !important;
+  }
+  #noodels {
+    display: none;
+  }
+  .left #onlyp {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .customize {
+    font-size: 20px;
+    color: red;
+    margin-right: 50px;
+  }
+  .active {
+    display: block;
+  }
+}
